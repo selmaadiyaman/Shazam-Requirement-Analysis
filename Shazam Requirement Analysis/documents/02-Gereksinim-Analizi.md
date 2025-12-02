@@ -1,66 +1,54 @@
-**Gereksinim Analizi** 
+# Gereksinim Analizi
 
-&nbsp;
+## 1. Fonksiyonel Gereksinimler
+- Bir kullanıcı olarak, bir ses kaydedebilmeliyim ve sistem sesten şarkıyı tanımlayabilmelidir.
+![Fonksiyonel Gereksinimler](https://raw.githubusercontent.com/selmaadiyaman/Shazam-Requirement-Analysis/main/Shazam%20Requirement%20Analysis/requirement/functional%20requirement.jpg)
+---
 
-1. **Fonksiyonel Gereksinimler** 
+## 2. Fonksiyonel Olmayan Gereksinimler
 
-• Bir kullanıcı olarak, bir ses kaydedebilmeliyim ve sistem sesten şarkıyı tanımlayabilmelidir. 
+### 2.1. Ölçeklenebilirlik
+- Shazam, öngörülemeyen sayıda kullanıcı talebini karşılayabilmelidir.  
+- Kullanıcı tabanı büyüdükçe sistem performans düşmeden yükü kaldırmalıdır.
 
+### 2.2. Kullanılabilirlik
+- Kullanıcılar arayüzde kolayca gezinebilmelidir.  
+- Kütüphane, çalma listeleri gibi alanlara sade tasarım sayesinde rahat ulaşılmalıdır.
 
+### 2.3. Dayanıklılık
+- Sistem, yanlış örnek, gürültülü ortam veya kısmi kesintilerde çökmeden çalışmalıdır.  
+- Farklı ses kalitelerini yönetip doğru tanıma yapabilmelidir.
 
-**2. Fonksiyonel Olmayan Gereksinimler** 
+### 2.4. Güvenilirlik
+- Kullanıcılar Shazam'ı hesaplı veya hesapsız kullanabilir.  
+- Hesaplı kullanımda veriler kullanıcı hesabına kaydedilir.  
+- Hesapsız kullanımda veriler anonim Shazam Kimliği ile tutulur.  
+- Apple kullanıcıları iCloud üzerinden senkronize edilir.  
+- Android kullanıcıları e-posta veya sosyal giriş ile hesap oluşturabilir.  
+- Öneriler için kullanıcı aktiviteleri toplanabilir.
 
-&nbsp;
+### 2.5. Desteklenebilirlik
+- Shazam hem tarayıcıda hem mobil cihazlarda desteklenir.
 
-**2.1. Ölçeklenebilirlik** 
+### 2.6. Uyumluluk
+- Shazam, cihazda başka uygulamalar çalışsa dahi sorunsuz çalışır.  
+- iOS ve Android işletim sistemleri ile uyumludur.
 
-• Shazam, fazla sayıda kullanıcılardan gelen öngörülemeyen sayıda talebi ele almalıdır. Ölçeklenebilirlik, kullanıcı tabanı büyüdükçe ve talep hacmi arttıkça, sistemin performans düşüşü olmadan ek yükü kaldırabilmesini sağlar. 
+### 2.7. Performans
+- Sistem her zaman erişilebilir olmalıdır.  
+- Şarkı tanıma süresi en fazla **30 saniye** olmalıdır.  
+- Bulunan şarkılar **90 saniye** ücretsiz dinlenebilir.
 
-&nbsp;
+---
 
-**2.2. Kullanılabilirlik** 
+## 3. Empati Haritası
 
-* Bir uygulama kullanılabilir olduğunda kullanıcılar arayüzünde kolayca gezinebilir. Shazam’ın etkili bir kullanıcı arayüze sahip olması sebebiyle uygulamanın içeriğini nasıl düzenlendiği anlaşılabilir. Kullanıcılar kütüphane, çalma listeleri gibi sayfalara nereden erişeceklerini yalın tasarım sayesinde rahat bir şekilde bulurlar. 
+![Empati Haritası](https://raw.githubusercontent.com/selmaadiyaman/Shazam-Requirement-Analysis/main/Shazam%20Requirement%20Analysis/requirement/emphaty%20map.jpg)
 
-**2.3. Dayanıklık** 
+---
 
-* Shazamın sistemi, yanlış şarkı örnekleri, gürültülü ortamlar veya kısmi sistem kesintileri gibi çeşitli arızaları çökmeden veya işlevselliğini kaybetmeden ele almalı ve kurtarmalıdır. 
-* Çok çeşitli müzik ve ses kalitesini yönetebilmeli ve bu değişkenlere rağmen şarkıları doğru bir şekilde tanımlayabilmelidir. 
+## 4. Moscow Analizi
 
-**2.4. Güvenilirlik** 
-
-* Kullanıcılar Shazam’ı hesap oluşturarak veya hesap oluşturmadan kullanabilirler; 
-* Shazam hesabı oluşturarak kullanıldığında Shazam aramaları kullanıcı hesaplarına kaydedilir ve Shazam verileri kullanıcılarla ilişkilendirilir. 
-* Shazam hesabı oluşturmadan kullanıdıldığında ise shazam verileri kullanıcıyla ilişkili olmayan bir Shazam Kimliği ile ilişkilendirilir. 
-* Kullanıcılar Apple cihazlara Apple kimliği ile giriş yaptığında Shazamlar iCloud’u kullanır ve kullanıcı ile ilişkilendirilir. 
-* Android cihaz kullanıcıları e-posta adresi veya üçüncü taraf hizmetini kullanarak hesap oluşturabilirler. 
-* Kullanıcıların arşivindeki keşifleri listelemek ve kişisel müzik önerileri sunmak için Shazam aktiviteleri hakkında bilgi toplanabilir. 
-
-**2.5. Desteklenebilirlik** 
-
-* Shazam uzantısı web tarayıcısı ve mobil olarak desteklenmektedir.  
-
-**2.6. Uyumluluk** 
-
-* Yüksek düzeyde uyumlu sistemler, bir cihazda diğer uygulamalar çalışırken genellikle iyi çalışır. Shazam ile çevrenizdeki şarkıları arama yapabilirken arama yapacağınız cihazda şarkı çalarken de eş zamanlı olarak Shazam ile arama yapılır. 
-* Uyumluluk aynı zamanda farklı işletim sistemlerine sahip kişilerin aynı uygulamaları kullanmasına da olanak tanır. 
-* Shazam İOS’ta sunduğu hizmetleri Android işletim sistemlerine de sunar. 
-
-**2.7. Performans** 
-
-* Kullanıcılar bir şarkıyı tanımlamaya çalıştığında sistem çalışır durumda ve erişilebilir olmalıdır. 
-* Şarkı aramaları otuz saniye sürmelidir. 
-* Shazam ile bulunan şarkılar doksan saniye ücretsiz olarak dinlenebilmelidir. 
-
-
-
-**3. Empati Haritası** 
-
-
-
-**4. Moscow Analizi** 
-
-
-
+![Moscow Analizi](https://raw.githubusercontent.com/selmaadiyaman/Shazam-Requirement-Analysis/main/Shazam%20Requirement%20Analysis/requirement/moscow.jpg)
 
 
